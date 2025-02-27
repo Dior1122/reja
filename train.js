@@ -1,15 +1,22 @@
-// TASK_A
-function countLetter(harf, soz) {
-    let count = 0;
-    for (let e = 0; e < soz.length; e++) {
-        if (soz[e] === harf) {
-            count++;
-        }
-    }
-    return count++;
-}
+// TASK-B
+const liste = ["ad2a54y79wet0sfgb9"];
+const newListe = liste[0].split('').filter(ele => ele === "7");
 
-console.log(countLetter("e", "engineer"));
+console.log("newListe", newListe);
+
+
+// TASK_A
+// function countLetter(harf, soz) {
+//     let count = 0;
+//     for (let e = 0; e < soz.length; e++) {
+//         if (soz[e] === harf) {
+//             count++;
+//         }
+//     }
+//     return count++;
+// }
+
+// console.log(countLetter("e", "engineer"));
 
 
 // console.log("Jack Ma maslahatlari");

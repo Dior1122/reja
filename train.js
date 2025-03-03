@@ -1,4 +1,5 @@
-// TASK-C
+
+//TASK-C
 
 const maxsulotlar = ["non", "lagmon", "cola"];
 const moment = require("moment");
@@ -18,7 +19,7 @@ class Shop {
     sotish(maxsulot, raqam) {
         const time = moment().format("HH:mm");
         if (!maxsulotlar.includes(maxsulot)) {
-            return `Hozir ${time}da: ${maxsulot} degan mahsulot mavjud emas!`;
+            return `Hozir ${time}da: ${maxsulot}  maxsulot mavjud emas!`;
         }
         if (maxsulot === "non" && this.non >= raqam) {
             this.non -= raqam;
@@ -37,7 +38,7 @@ class Shop {
     qabul(maxsulot, raqam) {
         const time = moment().format("HH:mm");
         if (!maxsulotlar.includes(maxsulot)) {
-            return `Hozir ${time}da: ${maxsulot} degan mahsulot mavjud emas!`;
+            return `Hozir ${time}da: ${maxsulot} maxsulot mavjud emas!`;
         }
         if (maxsulot === "non") {
             this.non += raqam;

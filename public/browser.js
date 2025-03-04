@@ -20,9 +20,11 @@ let createField = document.getElementById("create-field");
 document
 .getElementById("create-form").addEventListener("submit", function (e) {
   e.preventDefault();
-  axios.post("/create-item", {reja: createField.value })
-  .than((data) => {
-    document.getElementById("item-list").insertAdjacentHTML("beforeend", itemTemplate(response.data));
+  axios
+  .post("/create-item", {reja: createField.value })
+  .then((response) => {
+    document.getElementById("item-list")
+    .insertAdjacentHTML("beforeend", itemTemplate(response.data));
     createField.value ="";
     createField.focus();
   })

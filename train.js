@@ -1,65 +1,73 @@
+// TASK-D
+
+function checkContent(bir, ikki) {
+    return bir.split('').sort().join('') === ikki.split('').sort().join('');
+}
+
+console.log(checkContent("mitgroup", "gmtiprou"));
+
 
 //TASK-C
 
-const maxsulotlar = ["non", "lagmon", "cola"];
-const moment = require("moment");
+// const maxsulotlar = ["non", "lagmon", "cola"];
+// const moment = require("moment");
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.non = non;
-        this.lagmon = lagmon;
-        this.cola = cola;
-    }
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.non = non;
+//         this.lagmon = lagmon;
+//         this.cola = cola;
+//     }
 
-    qoldiq() {
-        const time = moment().format("HH:mm");
-        return `Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
-    }
+//     qoldiq() {
+//         const time = moment().format("HH:mm");
+//         return `Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+//     }
 
-    sotish(maxsulot, raqam) {
-        const time = moment().format("HH:mm");
-        if (!maxsulotlar.includes(maxsulot)) {
-            return `Hozir ${time}da: ${maxsulot}  maxsulot mavjud emas!`;
-        }
-        if (maxsulot === "non" && this.non >= raqam) {
-            this.non -= raqam;
-            return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
-        } else if (maxsulot === "lagmon" && this.lagmon >= raqam) {
-            this.lagmon -= raqam;
-            return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
-        } else if (maxsulot === "cola" && this.cola >= raqam) {
-            this.cola -= raqam;
-            return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
-        } else {
-            return `Hozir ${time}da: ${maxsulot}dan yetarli miqdor yo'q!`;
-        }
-    }
+//     sotish(maxsulot, raqam) {
+//         const time = moment().format("HH:mm");
+//         if (!maxsulotlar.includes(maxsulot)) {
+//             return `Hozir ${time}da: ${maxsulot}  maxsulot mavjud emas!`;
+//         }
+//         if (maxsulot === "non" && this.non >= raqam) {
+//             this.non -= raqam;
+//             return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
+//         } else if (maxsulot === "lagmon" && this.lagmon >= raqam) {
+//             this.lagmon -= raqam;
+//             return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
+//         } else if (maxsulot === "cola" && this.cola >= raqam) {
+//             this.cola -= raqam;
+//             return `Hozir ${time}da: ${raqam}ta ${maxsulot} sotildi!`;
+//         } else {
+//             return `Hozir ${time}da: ${maxsulot}dan yetarli miqdor yo'q!`;
+//         }
+//     }
 
-    qabul(maxsulot, raqam) {
-        const time = moment().format("HH:mm");
-        if (!maxsulotlar.includes(maxsulot)) {
-            return `Hozir ${time}da: ${maxsulot} maxsulot mavjud emas!`;
-        }
-        if (maxsulot === "non") {
-            this.non += raqam;
-        } else if (maxsulot === "lagmon") {
-            this.lagmon += raqam;
-        } else if (maxsulot === "cola") {
-            this.cola += raqam;
-        }
-        return `Hozir ${time}da: ${raqam}ta ${maxsulot} qabul qilindi!`;
-    }
-}
+//     qabul(maxsulot, raqam) {
+//         const time = moment().format("HH:mm");
+//         if (!maxsulotlar.includes(maxsulot)) {
+//             return `Hozir ${time}da: ${maxsulot} maxsulot mavjud emas!`;
+//         }
+//         if (maxsulot === "non") {
+//             this.non += raqam;
+//         } else if (maxsulot === "lagmon") {
+//             this.lagmon += raqam;
+//         } else if (maxsulot === "cola") {
+//             this.cola += raqam;
+//         }
+//         return `Hozir ${time}da: ${raqam}ta ${maxsulot} qabul qilindi!`;
+//     }
+// }
 
-const shop = new Shop(4, 5, 2);
+// const shop = new Shop(4, 5, 2);
 
-console.log(shop.qoldiq());
+// console.log(shop.qoldiq());
 
-console.log(shop.sotish('non', 3));
+// console.log(shop.sotish('non', 3));
 
-console.log(shop.qabul('cola', 4));
+// console.log(shop.qabul('cola', 4));
 
-console.log(shop.qoldiq());
+// console.log(shop.qoldiq());
 
 
 

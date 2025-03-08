@@ -1,10 +1,18 @@
-// TASK-D
-
-function checkContent(bir, ikki) {
-    return bir.split('').sort().join('') === ikki.split('').sort().join('');
+// TASK-E
+function getReverse(hello) {
+    return hello.split('').reverse().join('');
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
+// Test
+console.log(getReverse("hello"));
+
+// TASK-D
+
+// function checkContent(bir, ikki) {
+//     return bir.split('').sort().join('') === ikki.split('').sort().join('');
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
 
 
 //TASK-C

@@ -1,10 +1,22 @@
-// TASK-E
-function getReverse(hello) {
-    return hello.split('').reverse().join('');
-}
+function findDoublers(hello) {
+    for (let i = 0; i < hello.length; i++) {
+        for (let j = i + 1; j < hello.length; j++) {
+            if (hello[i] === hello[j]) {
+                return true;
+            }
+        }
+    }
+};
 
-// Test
-console.log(getReverse("hello"));
+console.log(findDoublers("hello"));
+
+// TASK-E
+// function getReverse(hello) {
+//     return hello.split('').reverse().join('');
+// }
+
+// // Test
+// console.log(getReverse("hello"));
 
 // TASK-D
 
